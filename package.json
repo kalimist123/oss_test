@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!.*.mjs$)', '/node_modules/(?!@ckeditor|lodash).+.(js|jsx|ts|tsx|svg)$"
+    ]
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.9"
+  }
+}
